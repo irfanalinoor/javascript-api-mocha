@@ -5,9 +5,9 @@
     "passes": 9,
     "pending": 0,
     "failures": 0,
-    "start": "2018-10-21T02:43:45.295Z",
-    "end": "2018-10-21T02:44:09.071Z",
-    "duration": 23776,
+    "start": "2018-10-21T04:05:15.664Z",
+    "end": "2018-10-21T04:05:43.358Z",
+    "duration": 27694,
     "testsRegistered": 9,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -19,7 +19,7 @@
     "pendingPercentClass": "danger"
   },
   "suites": {
-    "uuid": "366854f0-128d-4106-9871-7318e5b0a4ed",
+    "uuid": "b725e4e7-89f6-41d5-9466-9697bf7567b7",
     "title": "",
     "fullFile": "",
     "file": "",
@@ -28,18 +28,18 @@
     "tests": [],
     "suites": [
       {
-        "uuid": "74d0c710-c0d0-4e74-adf5-c083432a7b68",
+        "uuid": "f2749cb2-d686-49bb-98ff-a16699521145",
         "title": "Rest Countries API - Test Suite",
-        "fullFile": "/Users/irfannoor/Documents/GitHubRepo/ApiJavaScripAutomation/specs/Test_GetCountry.js",
+        "fullFile": "/Users/irfannoor/Documents/GitHubRepo/ApiJavaScriptAutomation/specs/Test_GetCountry.js",
         "file": "/specs/Test_GetCountry.js",
         "beforeHooks": [],
         "afterHooks": [],
         "tests": [],
         "suites": [
           {
-            "uuid": "f91a3be7-1e99-417b-a52f-9c707ce2a712",
+            "uuid": "586bfd7d-02ab-4259-86d5-661b117ed5ce",
             "title": "Basic Shakedown Tests",
-            "fullFile": "/Users/irfannoor/Documents/GitHubRepo/ApiJavaScripAutomation/specs/Test_GetCountry.js",
+            "fullFile": "/Users/irfannoor/Documents/GitHubRepo/ApiJavaScriptAutomation/specs/Test_GetCountry.js",
             "file": "/specs/Test_GetCountry.js",
             "beforeHooks": [],
             "afterHooks": [],
@@ -48,7 +48,7 @@
                 "title": "Verify 'Name' Api response is OK",
                 "fullTitle": "Rest Countries API - Test Suite Basic Shakedown Tests Verify 'Name' Api response is OK",
                 "timedOut": false,
-                "duration": 1751,
+                "duration": 3690,
                 "state": "passed",
                 "speed": "slow",
                 "pass": true,
@@ -57,7 +57,7 @@
                 "code": "test.data.INPUT_NAME = \"Australia\"\nbyName_response = await Get_ByName(test.data);\nexpect(byName_response.status).to.equal(200);\nexpect(byName_response.data).to.be.an('array');",
                 "err": {},
                 "isRoot": false,
-                "uuid": "abd8ee49-2a58-44ec-9490-54f0d352d3c4",
+                "uuid": "777d3853-20ab-499d-aff5-f6e03ba282c8",
                 "isHook": false,
                 "skipped": false
               },
@@ -65,7 +65,7 @@
                 "title": "Verify 'Code' Api response is OK",
                 "fullTitle": "Rest Countries API - Test Suite Basic Shakedown Tests Verify 'Code' Api response is OK",
                 "timedOut": false,
-                "duration": 1326,
+                "duration": 3485,
                 "state": "passed",
                 "speed": "slow",
                 "pass": true,
@@ -74,7 +74,7 @@
                 "code": "test.data.INPUT_CODE = \"AU\"\nbyCode_response = await Get_ByCode(test.data);\nexpect(byCode_response.status).to.equal(200);\nexpect(byCode_response.data).to.include.any.keys( 'name', 'topLevelDomain',\n'alpha2Code','alpha3Code','callingCodes','capital','altSpellings','region',\n'subregion','population','demonym','area','nativeName','numericCode','currencies');",
                 "err": {},
                 "isRoot": false,
-                "uuid": "a2c40edc-2014-41ba-8b34-81e3d6197997",
+                "uuid": "2a47bdc2-42a8-4bf5-b9d5-e986ac01dc1b",
                 "isHook": false,
                 "skipped": false
               },
@@ -82,7 +82,7 @@
                 "title": "Verify 'Capital' Api response is OK",
                 "fullTitle": "Rest Countries API - Test Suite Basic Shakedown Tests Verify 'Capital' Api response is OK",
                 "timedOut": false,
-                "duration": 2038,
+                "duration": 1332,
                 "state": "passed",
                 "speed": "slow",
                 "pass": true,
@@ -91,7 +91,7 @@
                 "code": "test.data.INPUT_CAPITAL = \"Canberra\",\nbyCapital_response = await Get_ByCapital(test.data);\nexpect(byCapital_response.status).to.equal(200);\nexpect(byCapital_response.data).to.be.an('array');",
                 "err": {},
                 "isRoot": false,
-                "uuid": "0e4e9693-3d6b-413c-9f9a-c7ad40b821fc",
+                "uuid": "7f0231d4-5350-49c7-b16f-0758aa18f1b2",
                 "isHook": false,
                 "skipped": false
               },
@@ -99,7 +99,7 @@
                 "title": "Verify 'Region' Api response is OK",
                 "fullTitle": "Rest Countries API - Test Suite Basic Shakedown Tests Verify 'Region' Api response is OK",
                 "timedOut": false,
-                "duration": 1220,
+                "duration": 2162,
                 "state": "passed",
                 "speed": "slow",
                 "pass": true,
@@ -108,30 +108,30 @@
                 "code": "test.data.INPUT_REGION = \"Oceania\"\nbyRegion_response = await Get_ByRegion(test.data);\nexpect(byRegion_response.status).to.equal(200);\nexpect(byRegion_response.data).to.be.an('array');",
                 "err": {},
                 "isRoot": false,
-                "uuid": "13b217bb-b7a9-4d84-a177-643b3fb9e67b",
+                "uuid": "68e79f54-ef94-40c4-bfda-9e96acddc349",
                 "isHook": false,
                 "skipped": false
               }
             ],
             "suites": [],
             "passes": [
-              "abd8ee49-2a58-44ec-9490-54f0d352d3c4",
-              "a2c40edc-2014-41ba-8b34-81e3d6197997",
-              "0e4e9693-3d6b-413c-9f9a-c7ad40b821fc",
-              "13b217bb-b7a9-4d84-a177-643b3fb9e67b"
+              "777d3853-20ab-499d-aff5-f6e03ba282c8",
+              "2a47bdc2-42a8-4bf5-b9d5-e986ac01dc1b",
+              "7f0231d4-5350-49c7-b16f-0758aa18f1b2",
+              "68e79f54-ef94-40c4-bfda-9e96acddc349"
             ],
             "failures": [],
             "pending": [],
             "skipped": [],
-            "duration": 6335,
+            "duration": 10669,
             "root": false,
             "rootEmpty": false,
             "_timeout": 30000
           },
           {
-            "uuid": "55df8360-646b-47a0-9edd-ade18cbbca3c",
+            "uuid": "f81afc43-f965-4664-825f-1a821c2b6900",
             "title": "Functional Tests",
-            "fullFile": "/Users/irfannoor/Documents/GitHubRepo/ApiJavaScripAutomation/specs/Test_GetCountry.js",
+            "fullFile": "/Users/irfannoor/Documents/GitHubRepo/ApiJavaScriptAutomation/specs/Test_GetCountry.js",
             "file": "/specs/Test_GetCountry.js",
             "beforeHooks": [],
             "afterHooks": [],
@@ -140,7 +140,7 @@
                 "title": "Verify CAPITAL NAME in 'Name Api' using 'Capital Api'",
                 "fullTitle": "Rest Countries API - Test Suite Functional Tests Verify CAPITAL NAME in 'Name Api' using 'Capital Api'",
                 "timedOut": false,
-                "duration": 4524,
+                "duration": 5279,
                 "state": "passed",
                 "speed": "slow",
                 "pass": true,
@@ -149,7 +149,7 @@
                 "code": "test.data.INPUT_CODE = \"AU\"   //Australia\nbyCode_response = await Get_ByCode(test.data);\n//take name of country + capital from response of CODE api\ntest.data.INPUT_NAME = byCode_response.data.name\ntest.data.INPUT_CAPITAL = byCode_response.data.capital\n//get responses of 'Name api' and 'Capital api'\nbyName_response = await Get_ByName(test.data);\nbyCapital_response = await Get_ByCapital(test.data);\n//expect that both response should have 'Country name' and 'capital'\nexpect(byName_response.data[0]).to.include.any.keys( 'name', 'capital',);\nexpect(byCapital_response.data[0]).to.include.any.keys( 'name', 'capital',);\n//Verify capital_name in 'Name Api' using 'Capital Api'\nexpect(byName_response.data[0].capital).to.equal(byCapital_response.data[0].capital);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "93521164-2d6f-4c32-bf85-ff308b64a93f",
+                "uuid": "2f8f7707-401c-4a6b-b0a6-7e1b745e4a7d",
                 "isHook": false,
                 "skipped": false
               },
@@ -157,7 +157,7 @@
                 "title": "Verify POPULATION value is same in 'Name + Code + Capital' Api responses",
                 "fullTitle": "Rest Countries API - Test Suite Functional Tests Verify POPULATION value is same in 'Name + Code + Capital' Api responses",
                 "timedOut": false,
-                "duration": 3812,
+                "duration": 5407,
                 "state": "passed",
                 "speed": "slow",
                 "pass": true,
@@ -166,7 +166,7 @@
                 "code": "test.data.INPUT_CODE = \"CN\"  //CHINA\nbyCode_response = await Get_ByCode(test.data);\n//take name of country + capital from response of CODE api\ntest.data.INPUT_NAME = byCode_response.data.name\ntest.data.INPUT_CAPITAL = byCode_response.data.capital\n//get responses of 'Name api' and 'Capital api'\nbyName_response = await Get_ByName(test.data);\nbyCapital_response = await Get_ByCapital(test.data);\n//expect that both response should have 'Country name' and 'capital'\nexpect(byName_response.data[0]).to.include.any.keys( 'population');\nexpect(byCapital_response.data[0]).to.include.any.keys( 'population',);\n//Verify Population value is same in Name + Code + Capital Api responses\nexpect(byCode_response.data.population).to.equal(byName_response.data[0].population);\nexpect(byCode_response.data.population).to.equal(byCapital_response.data[0].population);\nexpect(byName_response.data[0].population).to.equal(byCapital_response.data[0].population);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "f6fca98f-db50-4242-9914-cc3537a843e7",
+                "uuid": "c016ae55-efd2-4966-94c3-9685aee4cbaf",
                 "isHook": false,
                 "skipped": false
               },
@@ -174,7 +174,7 @@
                 "title": "Verify AREA value is same in 'Name + Code + Capital' Api responses",
                 "fullTitle": "Rest Countries API - Test Suite Functional Tests Verify AREA value is same in 'Name + Code + Capital' Api responses",
                 "timedOut": false,
-                "duration": 4072,
+                "duration": 4520,
                 "state": "passed",
                 "speed": "slow",
                 "pass": true,
@@ -183,21 +183,21 @@
                 "code": "test.data.INPUT_CODE = \"PK\"  //PAKISTAN\nbyCode_response = await Get_ByCode(test.data);\n//take name of country + capital from response of CODE api\ntest.data.INPUT_NAME = byCode_response.data.name\ntest.data.INPUT_CAPITAL = byCode_response.data.capital\n//get responses of 'Name api' and 'Capital api'\nbyName_response = await Get_ByName(test.data);\nbyCapital_response = await Get_ByCapital(test.data);\n//expect that both response should have 'Country name' and 'capital'\nexpect(byName_response.data[0]).to.include.any.keys( 'area');\nexpect(byCapital_response.data[0]).to.include.any.keys( 'area',);\n//Verify AREA value is same in Name + Code + Capital Api responses\nexpect(byCode_response.data.area).to.equal(byName_response.data[0].area);\nexpect(byCode_response.data.area).to.equal(byCapital_response.data[0].area);\nexpect(byName_response.data[0].area).to.equal(byCapital_response.data[0].area);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "73b8944a-fb1b-440a-9da3-933581eb05fe",
+                "uuid": "626b5d68-58e1-4c61-b4a3-cb842310caa5",
                 "isHook": false,
                 "skipped": false
               }
             ],
             "suites": [],
             "passes": [
-              "93521164-2d6f-4c32-bf85-ff308b64a93f",
-              "f6fca98f-db50-4242-9914-cc3537a843e7",
-              "73b8944a-fb1b-440a-9da3-933581eb05fe"
+              "2f8f7707-401c-4a6b-b0a6-7e1b745e4a7d",
+              "c016ae55-efd2-4966-94c3-9685aee4cbaf",
+              "626b5d68-58e1-4c61-b4a3-cb842310caa5"
             ],
             "failures": [],
             "pending": [],
             "skipped": [],
-            "duration": 12408,
+            "duration": 15206,
             "root": false,
             "rootEmpty": false,
             "_timeout": 30000
@@ -213,18 +213,18 @@
         "_timeout": 30000
       },
       {
-        "uuid": "44109cc6-ac06-4710-beb9-056dd9bfcbff",
+        "uuid": "0d233fd0-4cf5-42d2-983a-a5cea76e3493",
         "title": "Postman Echo API Suite - GET",
-        "fullFile": "/Users/irfannoor/Documents/GitHubRepo/ApiJavaScripAutomation/specs/Test_echoGet.js",
+        "fullFile": "/Users/irfannoor/Documents/GitHubRepo/ApiJavaScriptAutomation/specs/Test_echoGet.js",
         "file": "/specs/Test_echoGet.js",
         "beforeHooks": [],
         "afterHooks": [],
         "tests": [],
         "suites": [
           {
-            "uuid": "86feda37-b568-4b88-9b3d-113c2a42a011",
+            "uuid": "626c2628-a9ad-4280-9ecc-2bc7866f5b18",
             "title": "Basic Test",
-            "fullFile": "/Users/irfannoor/Documents/GitHubRepo/ApiJavaScripAutomation/specs/Test_echoGet.js",
+            "fullFile": "/Users/irfannoor/Documents/GitHubRepo/ApiJavaScriptAutomation/specs/Test_echoGet.js",
             "file": "/specs/Test_echoGet.js",
             "beforeHooks": [],
             "afterHooks": [],
@@ -233,7 +233,7 @@
                 "title": "Test 1",
                 "fullTitle": "Postman Echo API Suite - GET Basic Test Test 1",
                 "timedOut": false,
-                "duration": 3753,
+                "duration": 1086,
                 "state": "passed",
                 "speed": "slow",
                 "pass": true,
@@ -242,19 +242,19 @@
                 "code": "let responseOut = await postmanGet(test.data);\nexpect(responseOut.url).to.equal(test.data.URL);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "048046f0-6c37-486a-bb75-8e86b735eb5a",
+                "uuid": "f07e3081-6810-4049-a502-2bd3809c9129",
                 "isHook": false,
                 "skipped": false
               }
             ],
             "suites": [],
             "passes": [
-              "048046f0-6c37-486a-bb75-8e86b735eb5a"
+              "f07e3081-6810-4049-a502-2bd3809c9129"
             ],
             "failures": [],
             "pending": [],
             "skipped": [],
-            "duration": 3753,
+            "duration": 1086,
             "root": false,
             "rootEmpty": false,
             "_timeout": 5000
@@ -270,18 +270,18 @@
         "_timeout": 5000
       },
       {
-        "uuid": "942fac91-fe5f-4858-8607-5bf7aed1f879",
+        "uuid": "286fc299-5e49-4702-bd74-82405cd812a8",
         "title": "Postman Echo API Suite - POST",
-        "fullFile": "/Users/irfannoor/Documents/GitHubRepo/ApiJavaScripAutomation/specs/Test_echoPost.js",
+        "fullFile": "/Users/irfannoor/Documents/GitHubRepo/ApiJavaScriptAutomation/specs/Test_echoPost.js",
         "file": "/specs/Test_echoPost.js",
         "beforeHooks": [],
         "afterHooks": [],
         "tests": [],
         "suites": [
           {
-            "uuid": "749e5df0-dc76-4aa5-99fa-c455c419e29f",
+            "uuid": "13e29ad9-f456-4e4f-b180-5c3d8a8d07e8",
             "title": "Basic Test",
-            "fullFile": "/Users/irfannoor/Documents/GitHubRepo/ApiJavaScripAutomation/specs/Test_echoPost.js",
+            "fullFile": "/Users/irfannoor/Documents/GitHubRepo/ApiJavaScriptAutomation/specs/Test_echoPost.js",
             "file": "/specs/Test_echoPost.js",
             "beforeHooks": [],
             "afterHooks": [],
@@ -290,7 +290,7 @@
                 "title": "Test 1",
                 "fullTitle": "Postman Echo API Suite - POST Basic Test Test 1",
                 "timedOut": false,
-                "duration": 1262,
+                "duration": 715,
                 "state": "passed",
                 "speed": "slow",
                 "pass": true,
@@ -299,19 +299,19 @@
                 "code": "let responseOut = await postmanPost(test.data);\nexpect(responseOut.url).to.equal(test.data.URL);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "398cf10f-1138-4706-be3a-b0096ddfd29e",
+                "uuid": "32907c12-a8eb-4950-8adf-2060b3a02dc3",
                 "isHook": false,
                 "skipped": false
               }
             ],
             "suites": [],
             "passes": [
-              "398cf10f-1138-4706-be3a-b0096ddfd29e"
+              "32907c12-a8eb-4950-8adf-2060b3a02dc3"
             ],
             "failures": [],
             "pending": [],
             "skipped": [],
-            "duration": 1262,
+            "duration": 715,
             "root": false,
             "rootEmpty": false,
             "_timeout": 5000
