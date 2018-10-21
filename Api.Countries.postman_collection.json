@@ -1,0 +1,557 @@
+{
+	"info": {
+		"_postman_id": "be8914a9-dfec-4709-8cc5-5669a04697f5",
+		"name": "Api.Countries",
+		"description": "API ENDPOINTS\nBelow are described the REST endpoints available that you can use to search for countries",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://restcountries.eu/rest/v2/name/Australia",
+					"protocol": "https",
+					"host": [
+						"restcountries",
+						"eu"
+					],
+					"path": [
+						"rest",
+						"v2",
+						"name",
+						"Australia"
+					]
+				},
+				"description": "Search by country name. It can be the native name or partial name"
+			},
+			"response": [
+				{
+					"name": "Name",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://restcountries.eu/rest/v2/name/australia",
+							"protocol": "https",
+							"host": [
+								"restcountries",
+								"eu"
+							],
+							"path": [
+								"rest",
+								"v2",
+								"name",
+								"australia"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 20 Oct 2018 00:53:00 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Accept, X-Requested-With"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "public, max-age=86400"
+						},
+						{
+							"key": "Expect-CT",
+							"value": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "46c78143087ba2f6-HKG"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"name\": \"Australia\",\n        \"topLevelDomain\": [\n            \".au\"\n        ],\n        \"alpha2Code\": \"AU\",\n        \"alpha3Code\": \"AUS\",\n        \"callingCodes\": [\n            \"61\"\n        ],\n        \"capital\": \"Canberra\",\n        \"altSpellings\": [\n            \"AU\"\n        ],\n        \"region\": \"Oceania\",\n        \"subregion\": \"Australia and New Zealand\",\n        \"population\": 24117360,\n        \"latlng\": [\n            -27,\n            133\n        ],\n        \"demonym\": \"Australian\",\n        \"area\": 7692024,\n        \"gini\": 30.5,\n        \"timezones\": [\n            \"UTC+05:00\",\n            \"UTC+06:30\",\n            \"UTC+07:00\",\n            \"UTC+08:00\",\n            \"UTC+09:30\",\n            \"UTC+10:00\",\n            \"UTC+10:30\",\n            \"UTC+11:30\"\n        ],\n        \"borders\": [],\n        \"nativeName\": \"Australia\",\n        \"numericCode\": \"036\",\n        \"currencies\": [\n            {\n                \"code\": \"AUD\",\n                \"name\": \"Australian dollar\",\n                \"symbol\": \"$\"\n            }\n        ],\n        \"languages\": [\n            {\n                \"iso639_1\": \"en\",\n                \"iso639_2\": \"eng\",\n                \"name\": \"English\",\n                \"nativeName\": \"English\"\n            }\n        ],\n        \"translations\": {\n            \"de\": \"Australien\",\n            \"es\": \"Australia\",\n            \"fr\": \"Australie\",\n            \"ja\": \"オーストラリア\",\n            \"it\": \"Australia\",\n            \"br\": \"Austrália\",\n            \"pt\": \"Austrália\",\n            \"nl\": \"Australië\",\n            \"hr\": \"Australija\",\n            \"fa\": \"استرالیا\"\n        },\n        \"flag\": \"https://restcountries.eu/data/aus.svg\",\n        \"regionalBlocs\": [],\n        \"cioc\": \"AUS\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "FullName",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://restcountries.eu/rest/v2/name/Australia?fullText=true",
+					"protocol": "https",
+					"host": [
+						"restcountries",
+						"eu"
+					],
+					"path": [
+						"rest",
+						"v2",
+						"name",
+						"Australia"
+					],
+					"query": [
+						{
+							"key": "fullText",
+							"value": "true"
+						}
+					]
+				},
+				"description": "Search by country full name > \nhttps://restcountries.eu/rest/v2/name/{name}?fullText=true"
+			},
+			"response": [
+				{
+					"name": "FullName",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://restcountries.eu/rest/v2/name/Australia?fullText=true",
+							"protocol": "https",
+							"host": [
+								"restcountries",
+								"eu"
+							],
+							"path": [
+								"rest",
+								"v2",
+								"name",
+								"Australia"
+							],
+							"query": [
+								{
+									"key": "fullText",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 20 Oct 2018 00:53:18 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Accept, X-Requested-With"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "public, max-age=86400"
+						},
+						{
+							"key": "Expect-CT",
+							"value": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "46c781b65875a2f6-HKG"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"name\": \"Australia\",\n        \"topLevelDomain\": [\n            \".au\"\n        ],\n        \"alpha2Code\": \"AU\",\n        \"alpha3Code\": \"AUS\",\n        \"callingCodes\": [\n            \"61\"\n        ],\n        \"capital\": \"Canberra\",\n        \"altSpellings\": [\n            \"AU\"\n        ],\n        \"region\": \"Oceania\",\n        \"subregion\": \"Australia and New Zealand\",\n        \"population\": 24117360,\n        \"latlng\": [\n            -27,\n            133\n        ],\n        \"demonym\": \"Australian\",\n        \"area\": 7692024,\n        \"gini\": 30.5,\n        \"timezones\": [\n            \"UTC+05:00\",\n            \"UTC+06:30\",\n            \"UTC+07:00\",\n            \"UTC+08:00\",\n            \"UTC+09:30\",\n            \"UTC+10:00\",\n            \"UTC+10:30\",\n            \"UTC+11:30\"\n        ],\n        \"borders\": [],\n        \"nativeName\": \"Australia\",\n        \"numericCode\": \"036\",\n        \"currencies\": [\n            {\n                \"code\": \"AUD\",\n                \"name\": \"Australian dollar\",\n                \"symbol\": \"$\"\n            }\n        ],\n        \"languages\": [\n            {\n                \"iso639_1\": \"en\",\n                \"iso639_2\": \"eng\",\n                \"name\": \"English\",\n                \"nativeName\": \"English\"\n            }\n        ],\n        \"translations\": {\n            \"de\": \"Australien\",\n            \"es\": \"Australia\",\n            \"fr\": \"Australie\",\n            \"ja\": \"オーストラリア\",\n            \"it\": \"Australia\",\n            \"br\": \"Austrália\",\n            \"pt\": \"Austrália\",\n            \"nl\": \"Australië\",\n            \"hr\": \"Australija\",\n            \"fa\": \"استرالیا\"\n        },\n        \"flag\": \"https://restcountries.eu/data/aus.svg\",\n        \"regionalBlocs\": [],\n        \"cioc\": \"AUS\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Code",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://restcountries.eu/rest/v2/alpha/AU",
+					"protocol": "https",
+					"host": [
+						"restcountries",
+						"eu"
+					],
+					"path": [
+						"rest",
+						"v2",
+						"alpha",
+						"AU"
+					]
+				},
+				"description": "Search by ISO 3166-1 2-letter or 3-letter country code > \nhttps://restcountries.eu/rest/v2/alpha/{code}"
+			},
+			"response": [
+				{
+					"name": "Code",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://restcountries.eu/rest/v2/alpha/aus",
+							"protocol": "https",
+							"host": [
+								"restcountries",
+								"eu"
+							],
+							"path": [
+								"rest",
+								"v2",
+								"alpha",
+								"aus"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 20 Oct 2018 00:53:37 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Accept, X-Requested-With"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "public, max-age=86400"
+						},
+						{
+							"key": "Expect-CT",
+							"value": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "46c782291b1aa2f6-HKG"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"name\": \"Australia\",\n    \"topLevelDomain\": [\n        \".au\"\n    ],\n    \"alpha2Code\": \"AU\",\n    \"alpha3Code\": \"AUS\",\n    \"callingCodes\": [\n        \"61\"\n    ],\n    \"capital\": \"Canberra\",\n    \"altSpellings\": [\n        \"AU\"\n    ],\n    \"region\": \"Oceania\",\n    \"subregion\": \"Australia and New Zealand\",\n    \"population\": 24117360,\n    \"latlng\": [\n        -27,\n        133\n    ],\n    \"demonym\": \"Australian\",\n    \"area\": 7692024,\n    \"gini\": 30.5,\n    \"timezones\": [\n        \"UTC+05:00\",\n        \"UTC+06:30\",\n        \"UTC+07:00\",\n        \"UTC+08:00\",\n        \"UTC+09:30\",\n        \"UTC+10:00\",\n        \"UTC+10:30\",\n        \"UTC+11:30\"\n    ],\n    \"borders\": [],\n    \"nativeName\": \"Australia\",\n    \"numericCode\": \"036\",\n    \"currencies\": [\n        {\n            \"code\": \"AUD\",\n            \"name\": \"Australian dollar\",\n            \"symbol\": \"$\"\n        }\n    ],\n    \"languages\": [\n        {\n            \"iso639_1\": \"en\",\n            \"iso639_2\": \"eng\",\n            \"name\": \"English\",\n            \"nativeName\": \"English\"\n        }\n    ],\n    \"translations\": {\n        \"de\": \"Australien\",\n        \"es\": \"Australia\",\n        \"fr\": \"Australie\",\n        \"ja\": \"オーストラリア\",\n        \"it\": \"Australia\",\n        \"br\": \"Austrália\",\n        \"pt\": \"Austrália\",\n        \"nl\": \"Australië\",\n        \"hr\": \"Australija\",\n        \"fa\": \"استرالیا\"\n    },\n    \"flag\": \"https://restcountries.eu/data/aus.svg\",\n    \"regionalBlocs\": [],\n    \"cioc\": \"AUS\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Currency",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://restcountries.eu/rest/v2/currency/AUD",
+					"protocol": "https",
+					"host": [
+						"restcountries",
+						"eu"
+					],
+					"path": [
+						"rest",
+						"v2",
+						"currency",
+						"AUD"
+					]
+				},
+				"description": "Search by ISO 4217 currency code\n>\nhttps://restcountries.eu/rest/v2/currency/{currency}"
+			},
+			"response": []
+		},
+		{
+			"name": "CapitalCity",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://restcountries.eu/rest/v2/capital/Canberra",
+					"protocol": "https",
+					"host": [
+						"restcountries",
+						"eu"
+					],
+					"path": [
+						"rest",
+						"v2",
+						"capital",
+						"Canberra"
+					]
+				},
+				"description": "https://restcountries.eu/rest/v2/capital/{capital}"
+			},
+			"response": [
+				{
+					"name": "Capital City",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://restcountries.eu/rest/v2/capital/Canberra",
+							"protocol": "https",
+							"host": [
+								"restcountries",
+								"eu"
+							],
+							"path": [
+								"rest",
+								"v2",
+								"capital",
+								"Canberra"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 20 Oct 2018 00:57:24 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Accept, X-Requested-With"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "public, max-age=86400"
+						},
+						{
+							"key": "Expect-CT",
+							"value": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "46c787b51ffea2f6-HKG"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"name\": \"Australia\",\n        \"topLevelDomain\": [\n            \".au\"\n        ],\n        \"alpha2Code\": \"AU\",\n        \"alpha3Code\": \"AUS\",\n        \"callingCodes\": [\n            \"61\"\n        ],\n        \"capital\": \"Canberra\",\n        \"altSpellings\": [\n            \"AU\"\n        ],\n        \"region\": \"Oceania\",\n        \"subregion\": \"Australia and New Zealand\",\n        \"population\": 24117360,\n        \"latlng\": [\n            -27,\n            133\n        ],\n        \"demonym\": \"Australian\",\n        \"area\": 7692024,\n        \"gini\": 30.5,\n        \"timezones\": [\n            \"UTC+05:00\",\n            \"UTC+06:30\",\n            \"UTC+07:00\",\n            \"UTC+08:00\",\n            \"UTC+09:30\",\n            \"UTC+10:00\",\n            \"UTC+10:30\",\n            \"UTC+11:30\"\n        ],\n        \"borders\": [],\n        \"nativeName\": \"Australia\",\n        \"numericCode\": \"036\",\n        \"currencies\": [\n            {\n                \"code\": \"AUD\",\n                \"name\": \"Australian dollar\",\n                \"symbol\": \"$\"\n            }\n        ],\n        \"languages\": [\n            {\n                \"iso639_1\": \"en\",\n                \"iso639_2\": \"eng\",\n                \"name\": \"English\",\n                \"nativeName\": \"English\"\n            }\n        ],\n        \"translations\": {\n            \"de\": \"Australien\",\n            \"es\": \"Australia\",\n            \"fr\": \"Australie\",\n            \"ja\": \"オーストラリア\",\n            \"it\": \"Australia\",\n            \"br\": \"Austrália\",\n            \"pt\": \"Austrália\",\n            \"nl\": \"Australië\",\n            \"hr\": \"Australija\",\n            \"fa\": \"استرالیا\"\n        },\n        \"flag\": \"https://restcountries.eu/data/aus.svg\",\n        \"regionalBlocs\": [],\n        \"cioc\": \"AUS\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "CallingCode",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://restcountries.eu/rest/v2/callingcode/61",
+					"protocol": "https",
+					"host": [
+						"restcountries",
+						"eu"
+					],
+					"path": [
+						"rest",
+						"v2",
+						"callingcode",
+						"61"
+					]
+				},
+				"description": "https://restcountries.eu/rest/v2/callingcode/{callingcode}"
+			},
+			"response": []
+		},
+		{
+			"name": "Region",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://restcountries.eu/rest/v2/region/Oceania",
+					"protocol": "https",
+					"host": [
+						"restcountries",
+						"eu"
+					],
+					"path": [
+						"rest",
+						"v2",
+						"region",
+						"Oceania"
+					]
+				},
+				"description": "Search by region: Africa, Americas, Asia, Europe, Oceania\n> \nhttps://restcountries.eu/rest/v2/region/{region}"
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "bc279774-2e5f-45bc-9b8a-9ec51e681525",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "03bb2d13-258a-4643-86bb-d1aa7d75a9ed",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
