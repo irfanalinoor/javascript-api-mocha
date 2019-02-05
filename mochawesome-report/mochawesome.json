@@ -1,14 +1,14 @@
 {
   "stats": {
-    "suites": 7,
-    "tests": 9,
-    "passes": 9,
+    "suites": 14,
+    "tests": 15,
+    "passes": 15,
     "pending": 0,
     "failures": 0,
-    "start": "2018-10-21T04:05:15.664Z",
-    "end": "2018-10-21T04:05:43.358Z",
-    "duration": 27694,
-    "testsRegistered": 9,
+    "start": "2019-02-05T08:33:37.575Z",
+    "end": "2019-02-05T08:34:16.379Z",
+    "duration": 38804,
+    "testsRegistered": 15,
     "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
@@ -19,7 +19,7 @@
     "pendingPercentClass": "danger"
   },
   "suites": {
-    "uuid": "b725e4e7-89f6-41d5-9466-9697bf7567b7",
+    "uuid": "11636122-7dcc-4ace-bebf-317f642987ba",
     "title": "",
     "fullFile": "",
     "file": "",
@@ -28,19 +28,171 @@
     "tests": [],
     "suites": [
       {
-        "uuid": "f2749cb2-d686-49bb-98ff-a16699521145",
-        "title": "Rest Countries API - Test Suite",
-        "fullFile": "/Users/irfannoor/Documents/GitHubRepo/ApiJavaScriptAutomation/specs/Test_GetCountry.js",
-        "file": "/specs/Test_GetCountry.js",
+        "uuid": "985c1fa8-574c-4d57-9341-5778a2195297",
+        "title": "Performance Test Suite",
+        "fullFile": "C:\\Users\\L119466\\Downloads\\Test\\ApiJavaScriptAutomation\\specs\\PerformanceTest.js",
+        "file": "\\specs\\PerformanceTest.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "Verify Response=OK when both APIs are called 10times",
+            "fullTitle": "Performance Test Suite Verify Response=OK when both APIs are called 10times",
+            "timedOut": false,
+            "duration": 23901,
+            "state": "passed",
+            "speed": "slow",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "console.log(\"Expected Response Time per Api Request Call = \"+expectedApiResponseTime);\n      \nfor(var i = 0; i < 10; i++) {\n  // console.log(\"Calling APIs in \"+i+\" iteration\")\n  \n  testData1 = data.BaseURL+'current/?lat='+data.Current[i].Lat+'&lon='+data.Current[i].Lon+'&key='+data.ApiKey;\n  testData2 = data.BaseURL+'forecast/3hourly?postal_code='+data.Forecast3Hourly[i].Postal_Code+'&key='+data.ApiKey;\n  currentResponse = await Get_CurrentByGPSCoordinates(testData1);\n  forecastResponse = await Get_ForecastByPostalCode(testData2);\n  expect(currentResponse.statusCode).to.equal(200);  \n  expect(currentResponse.elapsedTime).to.lessThan(expectedApiResponseTime);\n  \n  expect(forecastResponse.statusCode).to.equal(200);\n  expect(forecastResponse.elapsedTime).to.lessThan(expectedApiResponseTime);\n  // console.log(\">>> Response Code of \\'Current Weather By GPS Coordinates\\' Api = \"+currentResponse.statusCode);\n  // console.log(\">>> Response Time of \\'Current Weather By GPS Coordinates\\' Api = \"+currentResponse.elapsedTime);\n  // console.log(\">>> Response Time of \\'Forecast Weather By Postal Code\\' Api = \"+forecastResponse.statusCode);\n  // console.log(\">>> Response Time of \\'Forecast Weather By Postal Code\\' Api = \"+forecastResponse.elapsedTime);\n}",
+            "err": {},
+            "isRoot": false,
+            "uuid": "9a7e9700-da11-478d-a155-2bd0e631e7fd",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "9a7e9700-da11-478d-a155-2bd0e631e7fd"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 23901,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 500000
+      },
+      {
+        "uuid": "f1bad2cd-9652-4b21-b4ac-f9ac2ffb13e9",
+        "title": "Postman Echo API Suite - GET",
+        "fullFile": "C:\\Users\\L119466\\Downloads\\Test\\ApiJavaScriptAutomation\\specs\\Test_echoGet.js",
+        "file": "\\specs\\Test_echoGet.js",
         "beforeHooks": [],
         "afterHooks": [],
         "tests": [],
         "suites": [
           {
-            "uuid": "586bfd7d-02ab-4259-86d5-661b117ed5ce",
+            "uuid": "149b3d7a-e294-4781-8b9a-84c01a1b6a7c",
+            "title": "Basic Test",
+            "fullFile": "C:\\Users\\L119466\\Downloads\\Test\\ApiJavaScriptAutomation\\specs\\Test_echoGet.js",
+            "file": "\\specs\\Test_echoGet.js",
+            "beforeHooks": [],
+            "afterHooks": [],
+            "tests": [
+              {
+                "title": "Test 1",
+                "fullTitle": "Postman Echo API Suite - GET Basic Test Test 1",
+                "timedOut": false,
+                "duration": 1137,
+                "state": "passed",
+                "speed": "slow",
+                "pass": true,
+                "fail": false,
+                "pending": false,
+                "code": "let responseOut = await postmanGet(test.data);\nexpect(responseOut.url).to.equal(test.data.URL);",
+                "err": {},
+                "isRoot": false,
+                "uuid": "fcaf2d59-6697-47e7-8135-860e3380929b",
+                "isHook": false,
+                "skipped": false
+              }
+            ],
+            "suites": [],
+            "passes": [
+              "fcaf2d59-6697-47e7-8135-860e3380929b"
+            ],
+            "failures": [],
+            "pending": [],
+            "skipped": [],
+            "duration": 1137,
+            "root": false,
+            "rootEmpty": false,
+            "_timeout": 5000
+          }
+        ],
+        "passes": [],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 0,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 5000
+      },
+      {
+        "uuid": "c66de182-a510-462d-8021-d0bab972a3a9",
+        "title": "Postman Echo API Suite - POST",
+        "fullFile": "C:\\Users\\L119466\\Downloads\\Test\\ApiJavaScriptAutomation\\specs\\Test_echoPost.js",
+        "file": "\\specs\\Test_echoPost.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [],
+        "suites": [
+          {
+            "uuid": "08a16aec-dd61-4148-8a82-0281f771afd2",
+            "title": "Basic Test",
+            "fullFile": "C:\\Users\\L119466\\Downloads\\Test\\ApiJavaScriptAutomation\\specs\\Test_echoPost.js",
+            "file": "\\specs\\Test_echoPost.js",
+            "beforeHooks": [],
+            "afterHooks": [],
+            "tests": [
+              {
+                "title": "Test 1",
+                "fullTitle": "Postman Echo API Suite - POST Basic Test Test 1",
+                "timedOut": false,
+                "duration": 800,
+                "state": "passed",
+                "speed": "slow",
+                "pass": true,
+                "fail": false,
+                "pending": false,
+                "code": "let responseOut = await postmanPost(test.data);\nexpect(responseOut.url).to.equal(test.data.URL);",
+                "err": {},
+                "isRoot": false,
+                "uuid": "42938951-adb0-4d63-ae2a-2cb47c4c2450",
+                "isHook": false,
+                "skipped": false
+              }
+            ],
+            "suites": [],
+            "passes": [
+              "42938951-adb0-4d63-ae2a-2cb47c4c2450"
+            ],
+            "failures": [],
+            "pending": [],
+            "skipped": [],
+            "duration": 800,
+            "root": false,
+            "rootEmpty": false,
+            "_timeout": 5000
+          }
+        ],
+        "passes": [],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 0,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 5000
+      },
+      {
+        "uuid": "47c31eaf-1f8f-43ce-8b73-56c9e298f39b",
+        "title": "Rest Countries API - Test Suite",
+        "fullFile": "C:\\Users\\L119466\\Downloads\\Test\\ApiJavaScriptAutomation\\specs\\Test_GetCountry.js",
+        "file": "\\specs\\Test_GetCountry.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [],
+        "suites": [
+          {
+            "uuid": "09c9ba3b-4c5f-4bfc-bf13-2bb6b75f6516",
             "title": "Basic Shakedown Tests",
-            "fullFile": "/Users/irfannoor/Documents/GitHubRepo/ApiJavaScriptAutomation/specs/Test_GetCountry.js",
-            "file": "/specs/Test_GetCountry.js",
+            "fullFile": "C:\\Users\\L119466\\Downloads\\Test\\ApiJavaScriptAutomation\\specs\\Test_GetCountry.js",
+            "file": "\\specs\\Test_GetCountry.js",
             "beforeHooks": [],
             "afterHooks": [],
             "tests": [
@@ -48,7 +200,7 @@
                 "title": "Verify 'Name' Api response is OK",
                 "fullTitle": "Rest Countries API - Test Suite Basic Shakedown Tests Verify 'Name' Api response is OK",
                 "timedOut": false,
-                "duration": 3690,
+                "duration": 648,
                 "state": "passed",
                 "speed": "slow",
                 "pass": true,
@@ -57,7 +209,7 @@
                 "code": "test.data.INPUT_NAME = \"Australia\"\nbyName_response = await Get_ByName(test.data);\nexpect(byName_response.status).to.equal(200);\nexpect(byName_response.data).to.be.an('array');",
                 "err": {},
                 "isRoot": false,
-                "uuid": "777d3853-20ab-499d-aff5-f6e03ba282c8",
+                "uuid": "abf54208-0bfc-42ef-9327-e6359ce047f6",
                 "isHook": false,
                 "skipped": false
               },
@@ -65,7 +217,7 @@
                 "title": "Verify 'Code' Api response is OK",
                 "fullTitle": "Rest Countries API - Test Suite Basic Shakedown Tests Verify 'Code' Api response is OK",
                 "timedOut": false,
-                "duration": 3485,
+                "duration": 560,
                 "state": "passed",
                 "speed": "slow",
                 "pass": true,
@@ -74,7 +226,7 @@
                 "code": "test.data.INPUT_CODE = \"AU\"\nbyCode_response = await Get_ByCode(test.data);\nexpect(byCode_response.status).to.equal(200);\nexpect(byCode_response.data).to.include.any.keys( 'name', 'topLevelDomain',\n'alpha2Code','alpha3Code','callingCodes','capital','altSpellings','region',\n'subregion','population','demonym','area','nativeName','numericCode','currencies');",
                 "err": {},
                 "isRoot": false,
-                "uuid": "2a47bdc2-42a8-4bf5-b9d5-e986ac01dc1b",
+                "uuid": "2addab96-625a-4b57-8882-bc039327049d",
                 "isHook": false,
                 "skipped": false
               },
@@ -82,7 +234,7 @@
                 "title": "Verify 'Capital' Api response is OK",
                 "fullTitle": "Rest Countries API - Test Suite Basic Shakedown Tests Verify 'Capital' Api response is OK",
                 "timedOut": false,
-                "duration": 1332,
+                "duration": 560,
                 "state": "passed",
                 "speed": "slow",
                 "pass": true,
@@ -91,7 +243,7 @@
                 "code": "test.data.INPUT_CAPITAL = \"Canberra\",\nbyCapital_response = await Get_ByCapital(test.data);\nexpect(byCapital_response.status).to.equal(200);\nexpect(byCapital_response.data).to.be.an('array');",
                 "err": {},
                 "isRoot": false,
-                "uuid": "7f0231d4-5350-49c7-b16f-0758aa18f1b2",
+                "uuid": "b60e2e88-7acb-4e6f-ba38-eb7eb696d6dc",
                 "isHook": false,
                 "skipped": false
               },
@@ -99,7 +251,7 @@
                 "title": "Verify 'Region' Api response is OK",
                 "fullTitle": "Rest Countries API - Test Suite Basic Shakedown Tests Verify 'Region' Api response is OK",
                 "timedOut": false,
-                "duration": 2162,
+                "duration": 810,
                 "state": "passed",
                 "speed": "slow",
                 "pass": true,
@@ -108,31 +260,31 @@
                 "code": "test.data.INPUT_REGION = \"Oceania\"\nbyRegion_response = await Get_ByRegion(test.data);\nexpect(byRegion_response.status).to.equal(200);\nexpect(byRegion_response.data).to.be.an('array');",
                 "err": {},
                 "isRoot": false,
-                "uuid": "68e79f54-ef94-40c4-bfda-9e96acddc349",
+                "uuid": "7d44bc63-6a16-4d65-a900-f4f47c00d410",
                 "isHook": false,
                 "skipped": false
               }
             ],
             "suites": [],
             "passes": [
-              "777d3853-20ab-499d-aff5-f6e03ba282c8",
-              "2a47bdc2-42a8-4bf5-b9d5-e986ac01dc1b",
-              "7f0231d4-5350-49c7-b16f-0758aa18f1b2",
-              "68e79f54-ef94-40c4-bfda-9e96acddc349"
+              "abf54208-0bfc-42ef-9327-e6359ce047f6",
+              "2addab96-625a-4b57-8882-bc039327049d",
+              "b60e2e88-7acb-4e6f-ba38-eb7eb696d6dc",
+              "7d44bc63-6a16-4d65-a900-f4f47c00d410"
             ],
             "failures": [],
             "pending": [],
             "skipped": [],
-            "duration": 10669,
+            "duration": 2578,
             "root": false,
             "rootEmpty": false,
             "_timeout": 30000
           },
           {
-            "uuid": "f81afc43-f965-4664-825f-1a821c2b6900",
+            "uuid": "9a2ddf51-3443-4191-8ad2-59911164b982",
             "title": "Functional Tests",
-            "fullFile": "/Users/irfannoor/Documents/GitHubRepo/ApiJavaScriptAutomation/specs/Test_GetCountry.js",
-            "file": "/specs/Test_GetCountry.js",
+            "fullFile": "C:\\Users\\L119466\\Downloads\\Test\\ApiJavaScriptAutomation\\specs\\Test_GetCountry.js",
+            "file": "\\specs\\Test_GetCountry.js",
             "beforeHooks": [],
             "afterHooks": [],
             "tests": [
@@ -140,7 +292,7 @@
                 "title": "Verify CAPITAL NAME in 'Name Api' using 'Capital Api'",
                 "fullTitle": "Rest Countries API - Test Suite Functional Tests Verify CAPITAL NAME in 'Name Api' using 'Capital Api'",
                 "timedOut": false,
-                "duration": 5279,
+                "duration": 1517,
                 "state": "passed",
                 "speed": "slow",
                 "pass": true,
@@ -149,7 +301,7 @@
                 "code": "test.data.INPUT_CODE = \"AU\"   //Australia\nbyCode_response = await Get_ByCode(test.data);\n//take name of country + capital from response of CODE api\ntest.data.INPUT_NAME = byCode_response.data.name\ntest.data.INPUT_CAPITAL = byCode_response.data.capital\n//get responses of 'Name api' and 'Capital api'\nbyName_response = await Get_ByName(test.data);\nbyCapital_response = await Get_ByCapital(test.data);\n//expect that both response should have 'Country name' and 'capital'\nexpect(byName_response.data[0]).to.include.any.keys( 'name', 'capital',);\nexpect(byCapital_response.data[0]).to.include.any.keys( 'name', 'capital',);\n//Verify capital_name in 'Name Api' using 'Capital Api'\nexpect(byName_response.data[0].capital).to.equal(byCapital_response.data[0].capital);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "2f8f7707-401c-4a6b-b0a6-7e1b745e4a7d",
+                "uuid": "3cfd3628-3b49-4201-ac89-8e1162667ea3",
                 "isHook": false,
                 "skipped": false
               },
@@ -157,7 +309,7 @@
                 "title": "Verify POPULATION value is same in 'Name + Code + Capital' Api responses",
                 "fullTitle": "Rest Countries API - Test Suite Functional Tests Verify POPULATION value is same in 'Name + Code + Capital' Api responses",
                 "timedOut": false,
-                "duration": 5407,
+                "duration": 1233,
                 "state": "passed",
                 "speed": "slow",
                 "pass": true,
@@ -166,7 +318,7 @@
                 "code": "test.data.INPUT_CODE = \"CN\"  //CHINA\nbyCode_response = await Get_ByCode(test.data);\n//take name of country + capital from response of CODE api\ntest.data.INPUT_NAME = byCode_response.data.name\ntest.data.INPUT_CAPITAL = byCode_response.data.capital\n//get responses of 'Name api' and 'Capital api'\nbyName_response = await Get_ByName(test.data);\nbyCapital_response = await Get_ByCapital(test.data);\n//expect that both response should have 'Country name' and 'capital'\nexpect(byName_response.data[0]).to.include.any.keys( 'population');\nexpect(byCapital_response.data[0]).to.include.any.keys( 'population',);\n//Verify Population value is same in Name + Code + Capital Api responses\nexpect(byCode_response.data.population).to.equal(byName_response.data[0].population);\nexpect(byCode_response.data.population).to.equal(byCapital_response.data[0].population);\nexpect(byName_response.data[0].population).to.equal(byCapital_response.data[0].population);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "c016ae55-efd2-4966-94c3-9685aee4cbaf",
+                "uuid": "4f32d55a-2f9e-4294-b4e1-2b17c14eb9fb",
                 "isHook": false,
                 "skipped": false
               },
@@ -174,7 +326,7 @@
                 "title": "Verify AREA value is same in 'Name + Code + Capital' Api responses",
                 "fullTitle": "Rest Countries API - Test Suite Functional Tests Verify AREA value is same in 'Name + Code + Capital' Api responses",
                 "timedOut": false,
-                "duration": 4520,
+                "duration": 1282,
                 "state": "passed",
                 "speed": "slow",
                 "pass": true,
@@ -183,21 +335,21 @@
                 "code": "test.data.INPUT_CODE = \"PK\"  //PAKISTAN\nbyCode_response = await Get_ByCode(test.data);\n//take name of country + capital from response of CODE api\ntest.data.INPUT_NAME = byCode_response.data.name\ntest.data.INPUT_CAPITAL = byCode_response.data.capital\n//get responses of 'Name api' and 'Capital api'\nbyName_response = await Get_ByName(test.data);\nbyCapital_response = await Get_ByCapital(test.data);\n//expect that both response should have 'Country name' and 'capital'\nexpect(byName_response.data[0]).to.include.any.keys( 'area');\nexpect(byCapital_response.data[0]).to.include.any.keys( 'area',);\n//Verify AREA value is same in Name + Code + Capital Api responses\nexpect(byCode_response.data.area).to.equal(byName_response.data[0].area);\nexpect(byCode_response.data.area).to.equal(byCapital_response.data[0].area);\nexpect(byName_response.data[0].area).to.equal(byCapital_response.data[0].area);",
                 "err": {},
                 "isRoot": false,
-                "uuid": "626b5d68-58e1-4c61-b4a3-cb842310caa5",
+                "uuid": "34b5cac8-20bb-4afa-8767-7db20b5944b9",
                 "isHook": false,
                 "skipped": false
               }
             ],
             "suites": [],
             "passes": [
-              "2f8f7707-401c-4a6b-b0a6-7e1b745e4a7d",
-              "c016ae55-efd2-4966-94c3-9685aee4cbaf",
-              "626b5d68-58e1-4c61-b4a3-cb842310caa5"
+              "3cfd3628-3b49-4201-ac89-8e1162667ea3",
+              "4f32d55a-2f9e-4294-b4e1-2b17c14eb9fb",
+              "34b5cac8-20bb-4afa-8767-7db20b5944b9"
             ],
             "failures": [],
             "pending": [],
             "skipped": [],
-            "duration": 15206,
+            "duration": 4032,
             "root": false,
             "rootEmpty": false,
             "_timeout": 30000
@@ -213,51 +365,89 @@
         "_timeout": 30000
       },
       {
-        "uuid": "0d233fd0-4cf5-42d2-983a-a5cea76e3493",
-        "title": "Postman Echo API Suite - GET",
-        "fullFile": "/Users/irfannoor/Documents/GitHubRepo/ApiJavaScriptAutomation/specs/Test_echoGet.js",
-        "file": "/specs/Test_echoGet.js",
+        "uuid": "75003542-3e19-4718-a663-0f89415bd975",
+        "title": "Current Weather Data API - Test Suite",
+        "fullFile": "C:\\Users\\L119466\\Downloads\\Test\\ApiJavaScriptAutomation\\specs\\Test_GetCurrentWeather.js",
+        "file": "\\specs\\Test_GetCurrentWeather.js",
         "beforeHooks": [],
         "afterHooks": [],
         "tests": [],
         "suites": [
           {
-            "uuid": "626c2628-a9ad-4280-9ecc-2bc7866f5b18",
-            "title": "Basic Test",
-            "fullFile": "/Users/irfannoor/Documents/GitHubRepo/ApiJavaScriptAutomation/specs/Test_echoGet.js",
-            "file": "/specs/Test_echoGet.js",
+            "uuid": "2c1d6de0-8233-4b33-a584-f9a7f8695f9a",
+            "title": "Basic Shakedown Tests",
+            "fullFile": "C:\\Users\\L119466\\Downloads\\Test\\ApiJavaScriptAutomation\\specs\\Test_GetCurrentWeather.js",
+            "file": "\\specs\\Test_GetCurrentWeather.js",
             "beforeHooks": [],
             "afterHooks": [],
             "tests": [
               {
-                "title": "Test 1",
-                "fullTitle": "Postman Echo API Suite - GET Basic Test Test 1",
+                "title": "Verify 'Current Weather By GPS Coordinates' Api response is OK",
+                "fullTitle": "Current Weather Data API - Test Suite Basic Shakedown Tests Verify 'Current Weather By GPS Coordinates' Api response is OK",
                 "timedOut": false,
-                "duration": 1086,
+                "duration": 1157,
                 "state": "passed",
                 "speed": "slow",
                 "pass": true,
                 "fail": false,
                 "pending": false,
-                "code": "let responseOut = await postmanGet(test.data);\nexpect(responseOut.url).to.equal(test.data.URL);",
+                "code": "testData = data.BaseURL+'current/?lat=0&lon=0&key='+data.ApiKey;\nconsole.log(\"Running Test for Current Weather By GPS Coordinates \"+testData);\n\ncurrentResponse = await Get_CurrentByGPSCoordinates(testData);\nexpect(currentResponse.statusCode).to.equal(200);\n\ncurrentResponseBody = JSON.parse(currentResponse.body);\n     \nexpect(currentResponseBody.data).to.be.an('array');",
                 "err": {},
                 "isRoot": false,
-                "uuid": "f07e3081-6810-4049-a502-2bd3809c9129",
+                "uuid": "1b5f183a-d88e-43a8-b39c-d4fc88d8f432",
                 "isHook": false,
                 "skipped": false
               }
             ],
             "suites": [],
             "passes": [
-              "f07e3081-6810-4049-a502-2bd3809c9129"
+              "1b5f183a-d88e-43a8-b39c-d4fc88d8f432"
             ],
             "failures": [],
             "pending": [],
             "skipped": [],
-            "duration": 1086,
+            "duration": 1157,
             "root": false,
             "rootEmpty": false,
-            "_timeout": 5000
+            "_timeout": 30000
+          },
+          {
+            "uuid": "92129c37-0b58-46bf-bea2-2e46bf719529",
+            "title": "Functional Tests",
+            "fullFile": "C:\\Users\\L119466\\Downloads\\Test\\ApiJavaScriptAutomation\\specs\\Test_GetCurrentWeather.js",
+            "file": "\\specs\\Test_GetCurrentWeather.js",
+            "beforeHooks": [],
+            "afterHooks": [],
+            "tests": [
+              {
+                "title": "Verify STATE CODE is displayed in response of 'Current Weather By GPS Coordinates' Api",
+                "fullTitle": "Current Weather Data API - Test Suite Functional Tests Verify STATE CODE is displayed in response of 'Current Weather By GPS Coordinates' Api",
+                "timedOut": false,
+                "duration": 1120,
+                "state": "passed",
+                "speed": "slow",
+                "pass": true,
+                "fail": false,
+                "pending": false,
+                "code": "testData = data.BaseURL+'current/?lat='+data.Current[2].Lat+'&lon='+data.Current[2].Lon+'&key='+data.ApiKey;\nconsole.log(\"Running Test for Current Weather By GPS Coordinates \"+testData);\n\ncurrentResponse = await Get_CurrentByGPSCoordinates(testData);\nexpect(currentResponse.statusCode).to.equal(200);\n\ncurrentResponseBody = JSON.parse(currentResponse.body);\n\nexpect(currentResponseBody.data[0]).to.include.any.keys( 'state_code');\n\nexpect(currentResponseBody.data[0].state_code).not.to.be.null;",
+                "err": {},
+                "isRoot": false,
+                "uuid": "94fdf26a-ce2e-4cfa-9330-a96a18988ef1",
+                "isHook": false,
+                "skipped": false
+              }
+            ],
+            "suites": [],
+            "passes": [
+              "94fdf26a-ce2e-4cfa-9330-a96a18988ef1"
+            ],
+            "failures": [],
+            "pending": [],
+            "skipped": [],
+            "duration": 1120,
+            "root": false,
+            "rootEmpty": false,
+            "_timeout": 30000
           }
         ],
         "passes": [],
@@ -267,54 +457,110 @@
         "duration": 0,
         "root": false,
         "rootEmpty": false,
-        "_timeout": 5000
+        "_timeout": 30000
       },
       {
-        "uuid": "286fc299-5e49-4702-bd74-82405cd812a8",
-        "title": "Postman Echo API Suite - POST",
-        "fullFile": "/Users/irfannoor/Documents/GitHubRepo/ApiJavaScriptAutomation/specs/Test_echoPost.js",
-        "file": "/specs/Test_echoPost.js",
+        "uuid": "53454fd0-e98b-4a8d-a10a-cc52e0436c80",
+        "title": "Forecast Weather Data API - Test Suite",
+        "fullFile": "C:\\Users\\L119466\\Downloads\\Test\\ApiJavaScriptAutomation\\specs\\Test_GetForecastWeather.js",
+        "file": "\\specs\\Test_GetForecastWeather.js",
         "beforeHooks": [],
         "afterHooks": [],
         "tests": [],
         "suites": [
           {
-            "uuid": "13e29ad9-f456-4e4f-b180-5c3d8a8d07e8",
-            "title": "Basic Test",
-            "fullFile": "/Users/irfannoor/Documents/GitHubRepo/ApiJavaScriptAutomation/specs/Test_echoPost.js",
-            "file": "/specs/Test_echoPost.js",
+            "uuid": "d166558f-fdd3-4b6e-b989-7927983fc5e0",
+            "title": "Basic Shakedown Tests",
+            "fullFile": "C:\\Users\\L119466\\Downloads\\Test\\ApiJavaScriptAutomation\\specs\\Test_GetForecastWeather.js",
+            "file": "\\specs\\Test_GetForecastWeather.js",
             "beforeHooks": [],
             "afterHooks": [],
             "tests": [
               {
-                "title": "Test 1",
-                "fullTitle": "Postman Echo API Suite - POST Basic Test Test 1",
+                "title": "Verify 'Forecast - 3 Hourly Data' Api response is OK",
+                "fullTitle": "Forecast Weather Data API - Test Suite Basic Shakedown Tests Verify 'Forecast - 3 Hourly Data' Api response is OK",
                 "timedOut": false,
-                "duration": 715,
+                "duration": 1221,
                 "state": "passed",
                 "speed": "slow",
                 "pass": true,
                 "fail": false,
                 "pending": false,
-                "code": "let responseOut = await postmanPost(test.data);\nexpect(responseOut.url).to.equal(test.data.URL);",
+                "code": "testData = data.BaseURL+'forecast/3hourly?postal_code=28546&key='+data.ApiKey;\nconsole.log(\"Running Test for Forecast by Postal Code\"+testData);\n\nforecastResponse = await Get_ForecastByPostalCode(testData);\nexpect(forecastResponse.statusCode).to.equal(200);\n\nforecastResponseBody = JSON.parse(forecastResponse.body);\n     \nexpect(forecastResponseBody.data).to.be.an('array');",
                 "err": {},
                 "isRoot": false,
-                "uuid": "32907c12-a8eb-4950-8adf-2060b3a02dc3",
+                "uuid": "6c527516-e786-4ec1-85f0-e9c2eacf2a07",
                 "isHook": false,
                 "skipped": false
               }
             ],
             "suites": [],
             "passes": [
-              "32907c12-a8eb-4950-8adf-2060b3a02dc3"
+              "6c527516-e786-4ec1-85f0-e9c2eacf2a07"
             ],
             "failures": [],
             "pending": [],
             "skipped": [],
-            "duration": 715,
+            "duration": 1221,
             "root": false,
             "rootEmpty": false,
-            "_timeout": 5000
+            "_timeout": 30000
+          },
+          {
+            "uuid": "a10ea7e8-3955-403b-a3f4-e1545de4b89b",
+            "title": "Functional Tests",
+            "fullFile": "C:\\Users\\L119466\\Downloads\\Test\\ApiJavaScriptAutomation\\specs\\Test_GetForecastWeather.js",
+            "file": "\\specs\\Test_GetForecastWeather.js",
+            "beforeHooks": [],
+            "afterHooks": [],
+            "tests": [
+              {
+                "title": "Verify response of 'Forecast Weather By Postal Code' Api have value of TIMESTAMP UTC",
+                "fullTitle": "Forecast Weather Data API - Test Suite Functional Tests Verify response of 'Forecast Weather By Postal Code' Api have value of TIMESTAMP UTC",
+                "timedOut": false,
+                "duration": 1226,
+                "state": "passed",
+                "speed": "slow",
+                "pass": true,
+                "fail": false,
+                "pending": false,
+                "code": "testData = data.BaseURL+'forecast/3hourly?postal_code='+data.Forecast3Hourly[2].Postal_Code+'&key='+data.ApiKey;\n\nconsole.log(\"Running Test for Forecast by Postal Code\"+testData);\nforecastResponse = await Get_ForecastByPostalCode(testData);\nexpect(forecastResponse.statusCode).to.equal(200);\n\nforecastResponseBody = JSON.parse(forecastResponse.body);\n\nfor(var i = 0; i < forecastResponseBody.data.length; i++) {\n    var dataObj = forecastResponseBody.data[i];\n\n    expect(dataObj).to.include.any.keys('timestamp_utc');\n    expect(dataObj.timestamp_utc).not.to.be.null;\n    // console.log(\"timestamp_utc = \"+dataObj.timestamp_utc);\n}",
+                "err": {},
+                "isRoot": false,
+                "uuid": "3f013e33-92b4-4cc7-8a62-ed2ddd957ae4",
+                "isHook": false,
+                "skipped": false
+              },
+              {
+                "title": "Verify response of 'Forecast Weather By Postal Code' Api have value of WEATHER",
+                "fullTitle": "Forecast Weather Data API - Test Suite Functional Tests Verify response of 'Forecast Weather By Postal Code' Api have value of WEATHER",
+                "timedOut": false,
+                "duration": 1505,
+                "state": "passed",
+                "speed": "slow",
+                "pass": true,
+                "fail": false,
+                "pending": false,
+                "code": "testData = data.BaseURL+'forecast/3hourly?postal_code='+data.Forecast3Hourly[2].Postal_Code+'&key='+data.ApiKey;\nconsole.log(\"Running Test for \"+testData);\n\nforecastResponse = await Get_ForecastByPostalCode(testData);\nexpect(forecastResponse.statusCode).to.equal(200);\n\nforecastResponseBody = JSON.parse(forecastResponse.body);\n\nfor(var i = 0; i < forecastResponseBody.data.length; i++) {\n    var dataObj = forecastResponseBody.data[i];\n\n    expect(dataObj.weather).to.include.any.keys('icon','code','description');\n    \n    expect(dataObj.weather).not.to.be.null;\n    expect(dataObj.weather.icon).not.to.be.null;\n    expect(dataObj.weather.code).not.to.be.null;\n    expect(dataObj.weather.description).not.to.be.null;\n    // console.log(\"weather = \"+dataObj.weather);\n}",
+                "err": {},
+                "isRoot": false,
+                "uuid": "bc48e562-337c-40af-bf37-df703a7b120e",
+                "isHook": false,
+                "skipped": false
+              }
+            ],
+            "suites": [],
+            "passes": [
+              "3f013e33-92b4-4cc7-8a62-ed2ddd957ae4",
+              "bc48e562-337c-40af-bf37-df703a7b120e"
+            ],
+            "failures": [],
+            "pending": [],
+            "skipped": [],
+            "duration": 2731,
+            "root": false,
+            "rootEmpty": false,
+            "_timeout": 30000
           }
         ],
         "passes": [],
@@ -324,7 +570,7 @@
         "duration": 0,
         "root": false,
         "rootEmpty": false,
-        "_timeout": 5000
+        "_timeout": 30000
       }
     ],
     "passes": [],
@@ -336,5 +582,5 @@
     "rootEmpty": true,
     "_timeout": 2000
   },
-  "copyrightYear": 2018
+  "copyrightYear": 2019
 }
