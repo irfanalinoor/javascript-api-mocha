@@ -11,7 +11,7 @@
 * **API Testing Frameworks:** Mocha, REST Api, Data-Driven (Json)
 * **Assertion Lib:** Chai, Expect, Should
 * **CI/CD:** Integration with [CircleCI](https://circleci.com/gh/irfanalinoor)
-----
+
 ## Setup
 * Download [ApiJavaScriptAutomation](https://github.com/irfanalinoor/ApiJavaScriptAutomation) Project from GitHub
 * Install latest [Node.JS](https://nodejs.org/en/download/)
@@ -21,7 +21,6 @@
 * Run `$ npm install -g mocha`
 * Run Tests `$ npm test`
 
-----
 ## Sample Test Scenarios - [Test Report Summary](http://htmlpreview.github.io/?https://github.com/irfanalinoor/ApiJavaScriptAutomation/blob/master/mochawesome-report/mochawesome.html)
 
     Current Weather Data API - Test Suite

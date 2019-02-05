@@ -14,7 +14,7 @@ this.timeout(30000);
             
             testData = data.BaseURL+'forecast/3hourly?postal_code=28546&key='+data.ApiKey;
 
-            console.log("Running Test for Forecast by Postal Code"+testData);
+            // console.log("Running Test for Forecast by Postal Code"+testData);
             
             forecastResponse = await Get_ForecastByPostalCode(testData);
 
@@ -35,7 +35,7 @@ this.timeout(30000);
 
             testData = data.BaseURL+'forecast/3hourly?postal_code='+data.Forecast3Hourly[2].Postal_Code+'&key='+data.ApiKey;
             
-            console.log("Running Test for Forecast by Postal Code"+testData);
+            // console.log("Running Test for Forecast by Postal Code"+testData);
 
             forecastResponse = await Get_ForecastByPostalCode(testData);
 

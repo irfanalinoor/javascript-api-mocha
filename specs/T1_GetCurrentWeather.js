@@ -13,7 +13,7 @@ this.timeout(30000);
 
             testData = data.BaseURL+'current/?lat=0&lon=0&key='+data.ApiKey;
 
-            console.log("Running Test for Current Weather By GPS Coordinates "+testData);
+            // console.log("Running Test for Current Weather By GPS Coordinates "+testData);
             
             currentResponse = await Get_CurrentByGPSCoordinates(testData);
 
@@ -34,7 +34,7 @@ this.timeout(30000);
 
             testData = data.BaseURL+'current/?lat='+data.Current[2].Lat+'&lon='+data.Current[2].Lon+'&key='+data.ApiKey;
 
-            console.log("Running Test for Current Weather By GPS Coordinates "+testData);
+            // console.log("Running Test for Current Weather By GPS Coordinates "+testData);/
             
             currentResponse = await Get_CurrentByGPSCoordinates(testData);
 
