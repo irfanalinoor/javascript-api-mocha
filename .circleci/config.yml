@@ -15,8 +15,8 @@ jobs:
       - restore_cache:
           key: dependency-cache-{{ checksum "package.json" }}
       - run:
-          name: Install-Mocha
+          name: Install Mocha
           command: 'sudo npm i -g mocha'
       - run:
-          name: Run-Tests
+          name: Run API Tests
           command: 'npm test'

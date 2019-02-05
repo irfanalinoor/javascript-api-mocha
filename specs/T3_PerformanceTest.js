@@ -7,12 +7,12 @@ const data = require('../resource/datafile/InputData.json');
 describe('Performance Test Suite', function() {
 this.timeout(500000);
 
-var expectedApiResponseTime = 4000;
+var expectedApiResponseTime = 3500;
 
 
-  it('Verify Response=OK when both APIs are called 10times', async function() {
+  it('Verify Response Time less than 3500 ms per API call when both APIs are called 10times', async function() {
 
-    console.log("Expected Response Time per Api Request Call = "+expectedApiResponseTime);
+    console.log("Expected Response Time per Api Request Call = "+expectedApiResponseTime+" ms");
           
     for(var i = 0; i < 10; i++) {
 
