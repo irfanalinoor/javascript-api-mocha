@@ -1,5 +1,5 @@
 ## API JavaScript Test Automation Framework
-
+[![CircleCI](https://circleci.com/gh/irfanalinoor/javascript-api-mocha/tree/master.svg?style=svg)](https://circleci.com/gh/irfanalinoor/javascript-api-mocha/tree/master)
 
 ## Overview
 * This is simple project to showcase Api Test Automation Framework in JavaScript using mocha.
