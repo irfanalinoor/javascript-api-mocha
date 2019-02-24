@@ -2,7 +2,7 @@
 
 
 ## Overview
-* This is demo project to showcase Api Test Automation Framework in JavaScript.
+* This is simple project to showcase Api Test Automation Framework in JavaScript using mocha.
 * Project uses free [Countries RESTApi](http://restcountries.eu) & [World Weather Api](https://www.weatherbit.io/api)
 * **Skills:** Api Test Automation, Modular Design
 * **Languages:** JavaScript/ Node.JS
@@ -13,7 +13,7 @@
 * **CI/CD:** Integration with [CircleCI](https://circleci.com/gh/irfanalinoor)
 
 ## Setup
-* Download [ApiJavaScriptAutomation](https://github.com/irfanalinoor/ApiJavaScriptAutomation) Project from GitHub
+* Download [javascript-api-mocha](https://github.com/irfanalinoor/javascript-api-mocha) Project from GitHub
 * Install latest [Node.JS](https://nodejs.org/en/download/)
 * Install latest [Visual Studio Code](https://code.visualstudio.com/download)
 * Open Terminal and Navigate to Project Directory
@@ -53,7 +53,7 @@
 
 
 ## CI/CD Run
-- Change [InputData](https://github.com/irfanalinoor/JavaScriptApiAutomation/blob/master/resource/datafile/InputData.json) to run tests on CircleCI
+- Change [InputData](https://github.com/irfanalinoor/javascript-api-mocha/blob/master/resource/datafile/InputData.json) to run tests on CircleCI
 
 - CircleCI - Config.yml
 
